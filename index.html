@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Presence 宣传片 v2</title>
-<style>body{font-family:system-ui;max-width:800px;margin:20px auto;padding:0 16px;background:#111;color:#eee}
-h1{color:#fff}video{width:100%;border-radius:8px}img{width:100%;border-radius:6px;margin:6px 0}
+<title>Presence 宣传片预览</title>
+<style>body{font-family:system-ui;max-width:900px;margin:20px auto;padding:0 16px;background:#111;color:#eee}
+h1,h2{color:#fff}video{width:100%;border-radius:8px;background:#000}
+img{width:100%;border-radius:6px;margin:4px 0}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .box{background:#1e1e1e;padding:12px;border-radius:8px;margin:12px 0}
+.new{background:#2e4;color:#000;padding:2px 8px;border-radius:4px;font-size:12px}
 a{color:#6ad}</style></head>
 <body>
-<h1>🎬 Presence 宣传片 v2</h1>
-<p>爱马仕交付. 4小时 · $0.40 · 18图 + 27s 粗剪</p>
+<h1>🎬 Presence 宣传片预览</h1>
 
-<div class="box"><h2>27秒粗剪（带音频）</h2>
-<video controls src="presence_with_audio.mp4"></video>
-<p><a href="presence_with_audio.mp4" download>⬇️ 下载 with_audio.mp4</a> · <a href="presence_rough_cut.mp4" download>⬇️ rough_cut.mp4 (无音)</a></p></div>
+<div class="box"><h2>🆕 v3 真视频 · Image-to-Video 锁脸测试 <span class="new">NEW</span></h2>
+<p>Veo 3 Fast · 6秒真动态 · 起始帧 portrait_01 锁同一张脸</p>
+<video controls src="act1_lock_face_6s.mp4" preload="auto"></video>
+<p>动作: 转头望窗 + 表情变化 + 镜头慢推. 你看脸够不够保真 / 动作够不够好莱坞?</p></div>
+
+<div class="box"><h2>v2 旧版 (ffmpeg 拼图占位, 不是真视频)</h2>
+<video controls src="presence_with_audio.mp4" preload="none"></video></div>
 
 <div class="box"><h2>陈阿姨 Character Sheet (4张)</h2>
 <div class="grid">
-<img src="character_auntie_portrait_01.png"><img src="character_auntie_side_02.png">
-<img src="character_auntie_smile_03.png"><img src="character_auntie_fullbody_04.png">
+<img src="character_auntie_portrait_01.png" loading="lazy">
+<img src="character_auntie_side_02.png" loading="lazy">
+<img src="character_auntie_smile_03.png" loading="lazy">
+<img src="character_auntie_fullbody_04.png" loading="lazy">
 </div></div>
 
-<div class="box"><h2>客厅环境</h2>
-<img src="environment_livingroom_01.png"></div>
-
-<div class="box"><h2>关键镜头 13张</h2>
+<div class="box"><h2>13 张关键镜头 (v2 静态图)</h2>
 <div class="grid">
-<img src="shot01_balcony_empty.png"><img src="shot02_livingroom_night.png">
-<img src="shot03_kitchen_hands.png"><img src="shot04_daughter_phone.png">
-<img src="shot05_tech_interface.png"><img src="shot08_connecting_screen.png">
-<img src="shot09_connected_screen.png"><img src="shot10_emotional_reaction.png">
-<img src="shot12_cooking_conversation.png"><img src="shot13_watering_plants.png">
-<img src="shot14_new_year.png"><img src="shot15_teaching_others.png">
-<img src="shot17_beach_hope.png">
+<img src="shot01_balcony_empty.png" loading="lazy">
+<img src="shot02_livingroom_night.png" loading="lazy">
+<img src="shot03_kitchen_hands.png" loading="lazy">
+<img src="shot04_daughter_phone.png" loading="lazy">
+<img src="shot05_tech_interface.png" loading="lazy">
+<img src="shot08_connecting_screen.png" loading="lazy">
+<img src="shot09_connected_screen.png" loading="lazy">
+<img src="shot10_emotional_reaction.png" loading="lazy">
+<img src="shot12_cooking_conversation.png" loading="lazy">
+<img src="shot13_watering_plants.png" loading="lazy">
+<img src="shot14_new_year.png" loading="lazy">
+<img src="shot15_teaching_others.png" loading="lazy">
+<img src="shot17_beach_hope.png" loading="lazy">
 </div></div>
 
-<p style="opacity:0.6">晓晓 · Tailscale 私网 · 只你能看到</p>
+<p style="opacity:0.5">晓晓 · 持续更新</p>
 </body></html>
